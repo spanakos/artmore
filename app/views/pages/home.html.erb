@@ -1,2 +1,139 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+
+        <div class="item">
+          <%= image_tag("long-room-6b.jpg", :alt => "black room") %>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Designer space in a week.</h1>
+              <p class="lead">You know what looks good, but you don't know how to make it happen? We can help you with that. Our in-house interior design team will select art for you.</p>
+              <a class="btn btn-large btn-primary" href="#">View transformations</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <%= image_tag("long-room-7b.jpg", :alt => "biege room") %>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Surprise Awesomeness.</h1>
+              <p class="lead">Receive a new oil painting in the mail every 3 months. You won't know exactly what it is until you open it, but you do know that it will be really neat.</p>
+              <a class="btn btn-large btn-primary" href="#">Subscribe</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="item active">
+          <%= image_tag("long-room-8b.jpg", :alt => "green room") %>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Be interesting.</h1>
+              <p class="lead">You love art but have a tight budget? Our gallery is full of striking oil paintings (not prints!) from around Asia. And it won't cost you an arm and a leg. We promise.</p>
+              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <a class="left carousel-control" href="http://twitter.github.io/bootstrap/examples/carousel.html#myCarousel" data-slide="prev">‹</a>
+      <a class="right carousel-control" href="http://twitter.github.io/bootstrap/examples/carousel.html#myCarousel" data-slide="next">›</a>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span4">
+          <%= image_tag("square-room-3.jpg", :class => "img-circle", :size => "140x140") %>
+          <!-- <img class="img-circle" data-src="holder.js/140x140" alt="140x140" style="width: 140px; height: 140px;" src="#"> -->
+          <h2>Art Purchase</h2>
+          <p>I will know what I want when I see it. Just point me to where the awesomeness lies.</p>
+          <p><a class="btn" href="http://twitter.github.io/bootstrap/examples/carousel.html#">View details »</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <%= image_tag("square-room-1.jpg", :class => "img-circle", :size => "140x140") %>
+          <h2>Art Consultation</h2>
+          <p>I don't know what I want. Help me beautify my space without breaking my bank.</p>
+          <p><a class="btn" href="http://twitter.github.io/bootstrap/examples/carousel.html#">View details »</a></p>
+        </div><!-- /.span4 -->
+        <div class="span4">
+          <%= image_tag("square-room-5.jpg", :class => "img-circle", :size => "140x140") %>
+          <h2>Art Subscription</h2>
+          <p>I like change, especially good ones. Refresh my home/ office with a steady supply of art.</p>
+          <p><a class="btn" href="#">View details »</a></p>
+        </div><!-- /.span4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <%= image_tag("1.png", :class => "featurette-image pull-right") %>
+        <h2 class="featurette-heading">Striking art pieces. <span class="muted">It's handpainted with real oil, no prints.</span></h2>
+        <p class="lead">All our art pieces are hand-painted in oil on canvas by artists from all over South East Asia. We carefully select every piece of art and have a preference for bright and bold pieces that are sure to brighten and inspire.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <%= image_tag("2.png", :class => "featurette-image pull-left") %>
+        <h2 class="featurette-heading">We know what we're talking about. <span class="muted">And we can prove it.</span></h2>
+        <p class="lead">Our designer team can help you select pieces and advise you where to place them. Don't stress about this, just send us your floor plan, photos of your space, and your taste preferences and <i>viola!</i></p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <%= image_tag("4.png", :class => "featurette-image pull-right") %>
+        <h2 class="featurette-heading">Rolled, not stretched. <span class="muted">Keeping it affordable for you.</span></h2>
+        <p class="lead">We roll up the paintings for shipping. A frame shop or art gallery can stretch them for you at a small cost. This helps keep prices down, but if you want us to mail them stretched, thy wish is our command.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+      <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./home_files/jquery.js"></script>
+    <script src="./home_files/bootstrap-transition.js"></script>
+    <script src="./home_files/bootstrap-alert.js"></script>
+    <script src="./home_files/bootstrap-modal.js"></script>
+    <script src="./home_files/bootstrap-dropdown.js"></script>
+    <script src="./home_files/bootstrap-scrollspy.js"></script>
+    <script src="./home_files/bootstrap-tab.js"></script>
+    <script src="./home_files/bootstrap-tooltip.js"></script>
+    <script src="./home_files/bootstrap-popover.js"></script>
+    <script src="./home_files/bootstrap-button.js"></script>
+    <script src="./home_files/bootstrap-collapse.js"></script>
+    <script src="./home_files/bootstrap-carousel.js"></script>
+    <script src="./home_files/bootstrap-typeahead.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+    <script src="./home_files/holder.js"></script>
+  
