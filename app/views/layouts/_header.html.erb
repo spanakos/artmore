@@ -4,9 +4,9 @@
       <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
       <div class="container">
 
-        <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar navbar-fixed-top">
           <div class="navbar-inner">
-            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <!-- navbar-inverse before navbarfixedtop Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
             <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -16,8 +16,10 @@
             <!-- <a class="brand" href="#">Project name</a> -->
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
+              
               <ul class="nav">
-                <li class="active"><%= link_to "Home", root_path %></li>
+                <!-- <li class="active"><%= link_to "Home", root_path %></li> -->
+                <li><%= link_to "Home", root_path %></li>
                 <li><%= link_to "About", about_path %></li>
                 <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
                 <li class="dropdown">
@@ -29,11 +31,23 @@
                     <li class="divider"></li>
                     <li class="nav-header">Nav header</li>
                     <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>          
                   </ul>
                 </li>
                 <li><a href="#">Contact</a></li>
               </ul>
+                <ul class="nav pull-right">    
+                  <% if user_signed_in? %>
+                    <li><p class="nav navbar-text"><small>Hi <%= link_to current_user.firstname, edit_user_registration_path %>!</small></li>
+                    <li><%= link_to "Add +", new_pin_path %></li>
+                    <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
+                    <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li></p>
+                  <% else %>     
+                    <li><%= link_to "Sign Up", new_user_registration_path %></li>
+                    <li><%= link_to "Login", new_user_session_path %></li>
+                  <% end %>
+                </ul>
+
             </div><!--/.nav-collapse -->
           </div><!-- /.navbar-inner -->
         </div><!-- /.navbar -->
