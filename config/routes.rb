@@ -1,13 +1,17 @@
 Artmore::Application.routes.draw do
-  
+  get "users/show"
+
   resources :pins
 
-
   devise_for :users
-
+  match 'users/:id' => 'users#show', as: :user
+ 
   root :to => 'pages#home'
+  get 'market' => 'pins#index'
+  get 'mypage' => 'users#mypage'
   get 'about' => 'pages#about'
   get 'contact' => 'pages#contact'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
