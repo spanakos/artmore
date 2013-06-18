@@ -10,4 +10,8 @@ class User < ActiveRecord::Base
   # attr_accessible :title, :body
 
   has_many :pins, dependent: :destroy
+
+  validates_presence_of :username
+  validates_uniqueness_of :username
+
 end
