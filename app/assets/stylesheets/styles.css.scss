@@ -20,6 +20,10 @@ $navbarBackground: white;
       color: #5a5a5a; 
     }
 
+    h4 {
+      color: #39d2d2; 
+    }
+
 
     /* CUSTOMIZE THE NAVBAR
     -------------------------------------------------- */
@@ -162,10 +166,15 @@ $navbarBackground: white;
 
     /* Thin out the marketing headings */
     .featurette-heading {
-      font-size: 50px;
+      font-size: 37px;
       font-weight: 300;
       line-height: 1;
       letter-spacing: -1px;
+    }
+
+     .featurette .lead {
+      font-size: 18px;
+      line-height: 1.3;
     }
 
     
