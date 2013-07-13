@@ -24,6 +24,25 @@ $navbarBackground: #f7f5f5;
       color: #ff9dd2; 
     }
 
+ /* Custom Button Color http://charliepark.org/bootstrap_buttons/ */
+.btn-custom {
+  background-color: hsl(332, 92%, 64%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f97fb8", endColorstr="#f74e9d");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#f97fb8), to(#f74e9d));
+  background-image: -moz-linear-gradient(top, #f97fb8, #f74e9d);
+  background-image: -ms-linear-gradient(top, #f97fb8, #f74e9d);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f97fb8), color-stop(100%, #f74e9d));
+  background-image: -webkit-linear-gradient(top, #f97fb8, #f74e9d);
+  background-image: -o-linear-gradient(top, #f97fb8, #f74e9d);
+  background-image: linear-gradient(#f97fb8, #f74e9d);
+  border-color: #f74e9d #f74e9d hsl(332, 92%, 61.5%);
+  color: white !important;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.16);
+  -webkit-font-smoothing: antialiased;
+}
+
+
 
     /* CUSTOMIZE THE NAVBAR
     -------------------------------------------------- */
