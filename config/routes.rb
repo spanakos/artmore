@@ -7,7 +7,7 @@ Artmore::Application.routes.draw do
   match 'users/:id' => 'users#show', as: :user
  
   root :to => 'pages#home'
-  get 'market' => 'pins#index'
+  get 'gallery' => 'pins#index'
   get 'mypage' => 'users#mypage'
   get 'about' => 'pages#about'
   get 'contact' => 'pages#contact'
