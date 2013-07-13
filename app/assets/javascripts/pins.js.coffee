@@ -6,6 +6,7 @@ jQuery ->
     $('#pins').imagesLoaded ->
         $('#pins').masonry itemSelector: ".box"
 
+#This is for endless scroll
 if $('.pagination').length
     $(window).scroll ->
       url = $('.pagination .next_page a').attr('href')
